@@ -16,7 +16,7 @@
         body {
             font-family: 'Inter', sans-serif;
             min-height: 100vh;
-            background: linear-gradient(145deg, #0b0b1a 0%, #1b1035 45%, #2a1a4a 100%);
+            background: linear-gradient(145deg, #F8A8B9 0%, #FAFFC7 45%, #F8A8B9 100%);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -56,12 +56,12 @@
         .header h1 {
             font-size: 28px;
             font-weight: 700;
-            color: #fff;
+            color: #451A2D;
             letter-spacing: -0.3px;
         }
 
         .header h1 span {
-            background: linear-gradient(135deg, #c084fc, #f472b6);
+            background: linear-gradient(135deg, #FAFFC7, #FAFFC7);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -72,7 +72,7 @@
             backdrop-filter: blur(4px);
             padding: 8px 18px;
             border-radius: 60px;
-            color: #c4b5d4;
+            color: #451A2D;
             font-size: 14px;
             font-weight: 500;
             border: 1px solid rgba(255, 255, 255, 0.06);
@@ -108,7 +108,7 @@
         .card:nth-child(3) { animation-delay: 0.2s; }
 
         .card h3 {
-            color: #e2d5f0;
+            color: #451A2D;
             font-size: 18px;
             font-weight: 600;
             margin-bottom: 18px;
@@ -127,7 +127,7 @@
         .schedule-item {
             display: flex;
             justify-content: space-between;
-            color: #cdc0db;
+            color: #451A2D;
             padding: 10px 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.04);
             font-size: 15px;
@@ -139,11 +139,11 @@
 
         .schedule-item .day {
             font-weight: 500;
-            color: #fff;
+            color: #451A2D;
         }
 
         .schedule-item .time {
-            color: #a78fc7;
+            color: #451A2D;
         }
 
         /* ---------- Домашка ---------- */
@@ -152,14 +152,14 @@
             padding: 14px 16px;
             border-radius: 16px;
             margin-bottom: 12px;
-            border-left: 3px solid #a78fc7;
-            color: #ddd0ea;
+            border-left: 3px solid #451A2D;
+            color: #451A2D;
             font-size: 15px;
             line-height: 1.5;
         }
 
         .homework-item strong {
-            color: #fff;
+            color: #451A2D;
             font-weight: 600;
         }
 
@@ -184,14 +184,14 @@
         }
 
         .ring-item .label {
-            color: #cdc0db;
+            color: #451A2D;
             font-size: 15px;
             font-weight: 500;
             flex: 1;
         }
 
         .ring-item .percent {
-            color: #fff;
+            color: #451A2D;
             font-weight: 700;
             font-size: 16px;
             width: 44px;
@@ -199,32 +199,33 @@
         }
 
         /* Кастомный SVG-круг */
-        .ring-svg {
-            width: 52px;
-            height: 52px;
-            transform: rotate(-90deg);
-            flex-shrink: 0;
-        }
+.ring-svg {
+    width: 52px;
+    height: 52px;
+    transform: rotate(-90deg);
+    flex-shrink: 0;
+}
 
-        .ring-svg .bg {
-            fill: none;
-            stroke: rgba(255, 255, 255, 0.08);
-            stroke-width: 5;
-        }
+/* Фон кольца — светлый */
+.ring-svg .bg {
+    fill: none;
+    stroke: #E8E0E4;
+    stroke-width: 5;
+}
 
-        .ring-svg .progress {
-            fill: none;
-            stroke-width: 5;
-            stroke-linecap: round;
-            stroke-dasharray: 125.6;  /* длина окружности 2*pi*20 */
-            stroke-dashoffset: 125.6;
-            transition: stroke-dashoffset 1.2s ease-out;
-        }
+/* Заполнение — яркое */
+.ring-svg .progress {
+    fill: none;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-dasharray: 125.6;
+    transition: stroke-dashoffset 1.2s ease-out;
+}
 
-        /* цвета для разных секций */
-        .ring-svg .progress.purple { stroke: #a78bfa; }
-        .ring-svg .progress.pink   { stroke: #f472b6; }
-        .ring-svg .progress.blue   { stroke: #60a5fa; }
+/* Цвета */
+.ring-svg .progress.purple { stroke: #A78BFA; }
+.ring-svg .progress.pink   { stroke: #F472B6; }
+.ring-svg .progress.blue   { stroke: #60A5FA; }
 
         /* ---------- Блок материалов ---------- */
         .material-list {
@@ -235,7 +236,7 @@
         .material-list li {
             padding: 12px 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-            color: #cdc0db;
+            color: #451A2D;
             font-size: 15px;
             display: flex;
             align-items: center;
@@ -247,7 +248,7 @@
         }
 
         .material-list li a {
-            color: #c4b5d4;
+            color: #451A2D;
             text-decoration: none;
             transition: color 0.2s;
             font-weight: 500;
@@ -255,7 +256,7 @@
         }
 
         .material-list li a:hover {
-            color: #c084fc;
+            color: #451A2D;
         }
 
         .material-list .emoji-big {
@@ -269,21 +270,21 @@
             border-top: 1px solid rgba(255, 255, 255, 0.05);
             display: flex;
             justify-content: space-between;
-            color: #6b5a7a;
+            color: #451A2D;
             font-size: 14px;
             flex-wrap: wrap;
             gap: 10px;
         }
 
         .footer a {
-            color: #8b7a9a;
+            color: #451A2D;
             text-decoration: none;
             border-bottom: 1px dotted transparent;
             transition: border-color 0.2s;
         }
 
         .footer a:hover {
-            border-color: #8b7a9a;
+            border-color: #451A2D;
         }
 
         /* ---------- Адаптивность ---------- */
@@ -317,8 +318,8 @@
 
     <!-- ШАПКА -->
     <div class="header">
-        <h1>✨ <span>Анна</span> · кабинет</h1>
-        <div class="badge">🇬🇧 Уровень B1 → B2</div>
+        <h1>✨ <span>Елизавета</span> · кабинет</h1>
+        <div class="badge">🇬🇧 prepare for the Olympiad</div>
     </div>
 
     <!-- ОСНОВНАЯ СЕТКА -->
@@ -326,75 +327,78 @@
 
         <!-- 1. РАСПИСАНИЕ -->
         <div class="card">
-            <h3><i>📅</i> Расписание</h3>
-            <div class="schedule-item"><span class="day">Понедельник</span><span class="time">17:00 – 18:30</span></div>
-            <div class="schedule-item"><span class="day">Среда</span><span class="time">17:00 – 18:30</span></div>
-            <div class="schedule-item"><span class="day">Суббота</span><span class="time">12:00 – 13:30</span></div>
-            <div style="margin-top: 16px; color: #6b5a7a; font-size: 14px; border-top: 1px solid rgba(255,255,255,0.04); padding-top: 14px;">
-                ⏳ Следующий урок: <span style="color:#c4b5d4;">сегодня, 17:00</span>
+            <h3><i>📅</i> SCHEDULE</h3>
+            <div class="schedule-item"><span class="day">Saturday</span><span class="time">17:00 – 19:00</span></div>
+            <div class="schedule-item"><span class="day">Monday</span><span class="time">17:00 – 19:00</span></div>
+            <div class="schedule-item"><span class="day">Saturday</span><span class="time">17:00 – 19:00</span></div>
+            <div style="margin-top: 16px; color: #451A2D; font-size: 14px; border-top: 1px solid rgba(255,255,255,0.04); padding-top: 14px;">
+                ⏳ Next class: <span style="color:#451A2D;">19.09, 17:00</span>
             </div>
         </div>
 
         <!-- 2. ДОМАШНЕЕ ЗАДАНИЕ (меняй текст здесь) -->
         <div class="card">
-            <h3><i>📘</i> Домашнее задание</h3>
+            <h3><i>📘</i> HOMEWORK</h3>
             <div class="homework-item">
-                <strong>Лексика:</strong> выучить слова по теме «Технологии» (список в Telegram)
+                <strong>Vocabulary</strong> Create a crossword puzzle (task 10 in Gulov’s textbook).
             </div>
             <div class="homework-item">
-                <strong>Грамматика:</strong> Present Perfect / Past Simple — упр. 4, 5 стр. 38 (письменно)
+                <strong>Grammar:</strong> - -
             </div>
             <div class="homework-item">
-                <strong>Говорение:</strong> подготовить монолог «Мой любимый гаджет» (1,5–2 мин)
+                <strong>Other:</strong> - -
             </div>
-            <div style="margin-top: 14px; font-size: 14px; color: #7a6a8a;">
-                📎 Дедлайн: <span style="color:#c4b5d4;">среда, 18:00</span>
+            <div style="margin-top: 14px; font-size: 14px; color: #451A2D;">
+                📎 deadline: <span style="color:#451A2D;">next class</span>
             </div>
         </div>
 
         <!-- 3. ПРОГРЕСС + МАТЕРИАЛЫ -->
         <div class="card">
-            <h3><i>📊</i> Прогресс</h3>
+            <h3><i>📊</i> Progress</h3>
 
             <!-- Круговые индикаторы -->
-            <div class="progress-ring-wrap">
+<div class="progress-ring-wrap">
 
-                <div class="ring-item">
-                    <span class="label">Лексика</span>
-                    <svg class="ring-svg" viewBox="0 0 48 48">
-                        <circle class="bg" cx="24" cy="24" r="20" />
-                        <circle class="progress purple" cx="24" cy="24" r="20" stroke-dashoffset="37.7" />
-                    </svg>
-                    <span class="percent">70%</span>
-                </div>
+    <!-- Vocabulary 70% -->
+    <div class="ring-item">
+        <span class="label">vocabulary</span>
+        <svg class="ring-svg" viewBox="0 0 48 48">
+            <circle class="bg" cx="24" cy="24" r="20" />
+            <circle class="progress purple" cx="24" cy="24" r="20" stroke-dashoffset="37.7" />
+        </svg>
+        <span class="percent">70%</span>
+    </div>
 
-                <div class="ring-item">
-                    <span class="label">Грамматика</span>
-                    <svg class="ring-svg" viewBox="0 0 48 48">
-                        <circle class="bg" cx="24" cy="24" r="20" />
-                        <circle class="progress pink" cx="24" cy="24" r="20" stroke-dashoffset="62.8" />
-                    </svg>
-                    <span class="percent">50%</span>
-                </div>
+    <!-- Grammar 60% -->
+    <div class="ring-item">
+        <span class="label">Grammar</span>
+        <svg class="ring-svg" viewBox="0 0 48 48">
+            <circle class="bg" cx="24" cy="24" r="20" />
+            <circle class="progress pink" cx="24" cy="24" r="20" stroke-dashoffset="50.2" />
+        </svg>
+        <span class="percent">60%</span>
+    </div>
 
-                <div class="ring-item">
-                    <span class="label">Говорение</span>
-                    <svg class="ring-svg" viewBox="0 0 48 48">
-                        <circle class="bg" cx="24" cy="24" r="20" />
-                        <circle class="progress blue" cx="24" cy="24" r="20" stroke-dashoffset="18.8" />
-                    </svg>
-                    <span class="percent">85%</span>
-                </div>
+    <!-- Writing 30% -->
+    <div class="ring-item">
+        <span class="label">Writing</span>
+        <svg class="ring-svg" viewBox="0 0 48 48">
+            <circle class="bg" cx="24" cy="24" r="20" />
+            <circle class="progress blue" cx="24" cy="24" r="20" stroke-dashoffset="87.9" />
+        </svg>
+        <span class="percent">30%</span>
+    </div>
 
-            </div>
+</div>
 
             <!-- Материалы -->
             <div style="margin-top: 24px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px;">
-                <h3 style="font-size: 16px; margin-bottom: 10px; color:#e2d5f0;"><i>🎯</i> Материалы</h3>
+                <h3 style="font-size: 16px; margin-bottom: 10px; color:#451A2D;"><i>🎯</i> Useful materials</h3>
                 <ul class="material-list">
-                    <li><span class="emoji-big">📄</span> <a href="#">Тема «Технологии» (словарь)</a></li>
-                    <li><span class="emoji-big">🎧</span> <a href="#">Подкаст для аудирования</a></li>
-                    <li><span class="emoji-big">📺</span> <a href="#">Видео по Present Perfect</a></li>
+                    <li><span class="emoji-big">📄</span> <a href="#https://quizlet.com/join/TPuCZHhjA">Quizlet course link</a></li>
+                    <li><span class="emoji-big">🎧</span> <a href="#">- -</a></li>
+                    <li><span class="emoji-big">📺</span> <a href="#">- -</a></li>
                 </ul>
             </div>
         </div>
@@ -405,7 +409,7 @@
     <div class="footer">
         <span>🧩 Обновлено: сегодня, 15:20</span>
         <span>
-            <a href="#">Telegram</a> · <a href="#">Связаться</a>
+            <a href="#">Telegram</a> · <a href="#t.me/matduyu">Contact</a>
         </span>
     </div>
 
